@@ -1,0 +1,918 @@
+   /* CONFIGURAÇÕES GERAIS==========================================*/ * {
+       box-sizing: border-box;
+   }
+
+   html {
+       scroll-behavior: smooth;
+   }
+
+   body {
+       margin: 0;
+       padding: 0;
+
+       font-family: Arial, Helvetica, sans-serif;
+
+       background: #f4f8ff;
+       color: #1e293b;
+
+       line-height: 1.6;
+   }
+
+
+   /* ==========================================
+   TÍTULO
+========================================== */
+
+   h1 {
+       font-size: 40px;
+
+       text-align: center;
+
+       color: #2563eb;
+
+       margin: 30px 0 20px;
+   }
+
+   h2 {
+       font-size: 35px;
+
+       text-align: center;
+
+       color: #172554;
+
+       margin: 40px auto 20px;
+
+       max-width: 900px;
+   }
+
+   h3 {
+       color: #172554;
+   }
+
+   h4 {
+       font-size: 30px;
+
+       text-align: center;
+
+       color: #172554;
+
+       margin-top: 20px;
+   }
+
+   h5 {
+       margin-bottom: 10px;
+   }
+
+
+   /* ==========================================
+   MENU
+========================================== */
+
+   header {
+       display: flex;
+
+       justify-content: center;
+       align-items: center;
+
+       flex-wrap: wrap;
+
+       gap: 15px;
+
+       padding: 20px;
+
+       background: white;
+
+       box-shadow:
+           0 3px 15px rgba(0, 0, 0, 0.08);
+
+       position: sticky;
+       top: 0;
+
+       z-index: 1000;
+   }
+
+   button {
+       background-color: #2563eb;
+
+       color: white;
+
+       border: none;
+
+       padding: 12px 24px;
+
+       border-radius: 8px;
+
+       font-size: 16px;
+
+       font-weight: bold;
+
+       cursor: pointer;
+
+       transition: 0.3s;
+   }
+
+   button:hover {
+       background-color: #1d4ed8;
+
+       transform: translateY(-3px);
+
+       box-shadow:
+           0 5px 12px rgba(37, 99, 235, 0.3);
+   }
+
+   button:active {
+       transform: translateY(0);
+   }
+
+
+   /* ==========================================
+   APRESENTAÇÃO
+========================================== */
+
+   .nome {
+       font-size: 22px;
+
+       max-width: 1000px;
+
+       margin: 0 auto 40px;
+
+       padding: 0 20px;
+
+       text-align: center;
+   }
+
+   main {
+       width: 100%;
+   }
+
+   section {
+       width: 90%;
+
+       max-width: 1200px;
+
+       margin: 60px auto;
+
+       padding: 35px;
+
+       background: white;
+
+       border-radius: 20px;
+
+       box-shadow:
+           0 5px 20px rgba(0, 0, 0, 0.08);
+   }
+
+
+   /* ==========================================
+   COMO FUNCIONA
+========================================== */
+
+   .primeiro {
+       font-size: 20px;
+   }
+
+   .lugares {
+       display: flex;
+
+       align-items: center;
+
+       justify-content: center;
+
+       flex-wrap: wrap;
+
+       gap: 12px;
+
+       font-size: 20px;
+
+       font-weight: bold;
+   }
+
+   .simples {
+       font-size: 20px;
+
+       color: #2563eb;
+
+       text-align: center;
+
+       font-weight: bold;
+   }
+
+   .como {
+       font-size: 30px;
+
+       text-align: center;
+
+       font-weight: bold;
+
+       color: #172554;
+   }
+
+   .opções {
+       font-size: 22px;
+
+       max-width: 850px;
+
+       margin: auto;
+
+       text-align: center;
+   }
+
+   .passo1 {
+       font-size: 25px;
+
+       font-weight: bold;
+
+       color: #2563eb;
+
+       text-align: center;
+   }
+
+   .passo2 {
+       font-size: 20px;
+
+       max-width: 900px;
+
+       margin: auto;
+
+       text-align: center;
+   }
+
+   .explore {
+       font-size: 28px;
+
+       text-align: center;
+
+       font-weight: bold;
+
+       color: #2563eb;
+   }
+
+   .destaque {
+       font-size: 24px;
+
+       text-align: center;
+
+       font-weight: bold;
+   }
+
+
+   /* ==========================================
+   DESTINOS
+========================================== */
+
+   #destinos {
+       scroll-margin-top: 100px;
+   }
+
+   .cidades {
+       display: grid;
+
+       grid-template-columns:
+           repeat(auto-fit, minmax(280px, 1fr));
+
+       gap: 30px;
+
+       margin-top: 30px;
+   }
+
+   .cidade {
+       background: white;
+
+       border-radius: 18px;
+
+       padding: 20px;
+
+       border: 1px solid #dbeafe;
+
+       box-shadow:
+           0 5px 20px rgba(0, 0, 0, 0.1);
+
+       opacity: 1;
+
+       transform: translateY(0);
+
+       transition:
+           box-shadow 0.3s ease,
+           transform 0.3s ease;
+   }
+
+   .cidade:hover {
+       box-shadow:
+           0 10px 30px rgba(37, 99, 235, 0.2);
+
+       transform: translateY(-5px);
+   }
+
+   .cidade.aparecer {
+       opacity: 1;
+
+       transform: translateY(0);
+   }
+
+   .cidade:hover {
+       box-shadow:
+           0 10px 30px rgba(37, 99, 235, 0.2);
+
+       transform: translateY(-5px);
+   }
+
+   .cidade h3 {
+       font-size: 25px;
+
+       margin: 10px 0;
+
+       text-align: center;
+   }
+
+   .cidade img {
+       width: 100%;
+
+       height: 220px;
+
+       object-fit: cover;
+
+       border: 3px solid #2563eb;
+
+       border-radius: 15px;
+
+       box-shadow:
+           5px 5px 10px rgba(0, 0, 0, 0.2);
+
+       display: block;
+
+       margin: 0 auto;
+
+       transition: 0.3s;
+   }
+
+   .cidade img:hover {
+       transform: scale(1.03);
+   }
+
+   .categoria {
+       display: inline-block;
+
+       background: #2563eb;
+
+       color: white;
+
+       padding: 5px 12px;
+
+       border-radius: 20px;
+
+       font-size: 13px;
+
+       font-weight: bold;
+   }
+
+   .conteudo {
+       padding: 10px;
+
+       text-align: center;
+
+       font-size: 18px;
+   }
+
+   .conteudo p {
+       margin-bottom: 0;
+   }
+
+   .conteudo h3 {
+       font-size: 28px;
+
+       color: #16a34a;
+   }
+
+   .conteudo small {
+       color: #64748b;
+   }
+
+   .preco {
+       font-size: 20px;
+
+       font-weight: bold;
+
+       color: #16a34a;
+
+       text-align: center;
+   }
+
+
+   /* ==========================================
+   DESTINO SELECIONADO
+========================================== */
+
+   .cidade.destinoSelecionado {
+       outline: 4px solid #2563eb;
+
+       outline-offset: 5px;
+
+       box-shadow:
+           0 0 25px rgba(37, 99, 235, 0.5);
+   }
+
+
+   /* ==========================================
+   BENEFÍCIOS
+========================================== */
+
+   #beneficios {
+       scroll-margin-top: 100px;
+   }
+
+   .ideia {
+       text-align: center;
+
+       font-size: 20px;
+   }
+
+   .botao {
+       display: flex;
+
+       justify-content: center;
+
+       align-items: center;
+
+       flex-wrap: wrap;
+
+       gap: 20px;
+
+       margin: 30px 0;
+   }
+
+
+   /* ==========================================
+   CARDS
+========================================== */
+
+   .card {
+       background: #eff6ff;
+
+       padding: 25px;
+
+       border-radius: 15px;
+
+       border-left: 5px solid #2563eb;
+
+       margin-top: 30px;
+   }
+
+   .resposta {
+       font-size: 24px;
+
+       font-weight: bold;
+
+       color: #172554;
+   }
+
+
+   /* ==========================================
+   FAQ
+========================================== */
+
+   #faq {
+       scroll-margin-top: 100px;
+   }
+
+   .avaliacao {
+       text-align: center;
+
+       font-size: 22px;
+
+       font-weight: bold;
+
+       color: #2563eb;
+   }
+
+   .card1 {
+       max-width: 900px;
+
+       margin: 30px auto;
+
+       background: #f8fafc;
+
+       padding: 25px;
+
+       border-radius: 15px;
+   }
+
+   .cobranca,
+   .card1 .preco {
+       font-size: 22px;
+
+       font-weight: bold;
+
+       color: #2563eb;
+
+       cursor: pointer;
+
+       padding: 15px;
+
+       background: white;
+
+       border-radius: 10px;
+
+       transition: 0.3s;
+   }
+
+   .cobranca:hover,
+   .card1 .preco:hover {
+       background: #eff6ff;
+   }
+
+   .card3,
+   .isso {
+       padding: 15px;
+
+       background: #e0f2fe;
+
+       border-radius: 10px;
+
+       margin-bottom: 25px;
+   }
+
+
+   /* ==========================================
+   RODAPÉ
+========================================== */
+
+   footer {
+       background: #172554;
+
+       color: white;
+
+       text-align: center;
+
+       padding: 40px 20px;
+
+       margin-top: 60px;
+   }
+
+   .final {
+       font-size: 18px;
+   }
+
+   .avaliar {
+       font-size: 30px;
+
+       color: white;
+   }
+
+
+   /* ==========================================
+   ESTRELAS
+========================================== */
+
+   .estrelas {
+       display: flex;
+
+       justify-content: center;
+
+       gap: 5px;
+
+       margin: 10px 0 20px;
+   }
+
+   .estrelas span {
+       font-size: 40px;
+
+       color: #ccc;
+
+       cursor: pointer;
+
+       transition: 0.2s;
+   }
+
+   .estrelas span:hover {
+       color: gold;
+
+       transform: scale(1.2);
+   }
+
+
+   /* ==========================================
+   MENSAGEM DO SITE
+========================================== */
+
+   .mensagem-site {
+       position: fixed;
+
+       left: 50%;
+
+       bottom: 30px;
+
+       z-index: 10000;
+
+       max-width: 90%;
+
+       padding: 15px 25px;
+
+       background: #1e293b;
+
+       color: white;
+
+       border-radius: 12px;
+
+       box-shadow:
+           0 10px 30px rgba(0, 0, 0, 0.3);
+
+       text-align: center;
+
+       opacity: 0;
+
+       transform:
+           translate(-50%, 100px);
+
+       transition:
+           opacity 0.3s ease,
+           transform 0.3s ease;
+   }
+
+   .mensagem-site.mostrar {
+       opacity: 1;
+
+       transform:
+           translate(-50%, 0);
+   }
+
+
+   /* ==========================================
+   MODAL DE BUSCA
+========================================== */
+
+   #janelaBusca {
+       position: fixed;
+
+       inset: 0;
+
+       z-index: 9999;
+   }
+
+   .fundo-modal {
+       width: 100%;
+
+       height: 100%;
+
+       background:
+           rgba(0, 0, 0, 0.65);
+
+       display: flex;
+
+       justify-content: center;
+
+       align-items: center;
+
+       padding: 20px;
+   }
+
+   .modal {
+       position: relative;
+
+       width: 100%;
+
+       max-width: 500px;
+
+       max-height: 90vh;
+
+       overflow-y: auto;
+
+       background: white;
+
+       color: #1e293b;
+
+       padding: 30px;
+
+       border-radius: 20px;
+
+       box-shadow:
+           0 15px 50px rgba(0, 0, 0, 0.4);
+
+       animation:
+           aparecerModal 0.3s ease;
+   }
+
+   .modal h2 {
+       font-size: 28px;
+
+       text-align: left;
+
+       margin-top: 0;
+   }
+
+   .modal label {
+       display: block;
+
+       margin-top: 15px;
+
+       margin-bottom: 5px;
+
+       font-weight: bold;
+   }
+
+   .modal input {
+       width: 100%;
+
+       padding: 12px;
+
+       border: 2px solid #dbeafe;
+
+       border-radius: 8px;
+
+       font-size: 16px;
+   }
+
+   .modal input:focus {
+       outline: none;
+
+       border-color: #2563eb;
+   }
+
+   .modal #realizarBusca {
+       width: 100%;
+
+       margin-top: 20px;
+   }
+
+   .fechar-modal {
+       position: absolute;
+
+       top: 15px;
+
+       right: 15px;
+
+       background: #ef4444;
+
+       padding: 8px 12px;
+
+       font-size: 18px;
+   }
+
+   .fechar-modal:hover {
+       background: #dc2626;
+   }
+
+
+   /* ==========================================
+   RESULTADO DA BUSCA
+========================================== */
+
+   #resultadoBusca {
+       margin-top: 20px;
+   }
+
+   .resultado {
+       padding: 20px;
+
+       background: #eff6ff;
+
+       border-radius: 12px;
+
+       border-left: 5px solid #2563eb;
+   }
+
+   .resultado.sucesso {
+       background: #ecfdf5;
+
+       border-left-color: #16a34a;
+   }
+
+   .resultado h3 {
+       margin-top: 0;
+   }
+
+   .resultado h2 {
+       font-size: 30px;
+
+       color: #16a34a;
+
+       margin: 10px 0;
+   }
+
+
+   /* ==========================================
+   ERROS
+========================================== */
+
+   .erro {
+       padding: 15px;
+
+       background: #fee2e2;
+
+       color: #b91c1c;
+
+       border-radius: 10px;
+
+       font-weight: bold;
+   }
+
+
+   /* ==========================================
+   LOADING
+========================================== */
+
+   .carregando {
+       width: 35px;
+
+       height: 35px;
+
+       margin: 20px auto;
+
+       border: 4px solid #ddd;
+
+       border-top-color: #2563eb;
+
+       border-radius: 50%;
+
+       animation:
+           carregando 1s linear infinite;
+   }
+
+   @keyframes carregando {
+
+       to {
+           transform: rotate(360deg);
+       }
+
+   }
+
+
+   /* ==========================================
+   ANIMAÇÕES
+========================================== */
+
+   @keyframes aparecerModal {
+
+       from {
+           opacity: 0;
+
+           transform: scale(0.9);
+       }
+
+       to {
+           opacity: 1;
+
+           transform: scale(1);
+       }
+
+   }
+
+
+   /* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+   @media (max-width: 700px) {
+
+       h1 {
+           font-size: 32px;
+       }
+
+       h2 {
+           font-size: 27px;
+       }
+
+       header {
+           position: relative;
+       }
+
+       header button {
+           font-size: 14px;
+
+           padding: 10px 15px;
+       }
+
+       section {
+           width: 95%;
+
+           padding: 20px;
+       }
+
+       .nome {
+           font-size: 18px;
+       }
+
+       .lugares {
+           flex-direction: column;
+       }
+
+       .lugares button {
+           width: 100%;
+       }
+
+       .botao {
+           flex-direction: column;
+       }
+
+       .botao button {
+           width: 100%;
+       }
+
+       .cidade img {
+           height: 200px;
+       }
+
+       .modal {
+           padding: 20px;
+       }
+
+   }
