@@ -4,132 +4,178 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="h1.css" />
-    <script type="module" src="JS.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script type="module" src="JS.js" defer></script>
     <title>New Airs</title>
   </head>
   <body>
-    <h1>New Airs ✈️</h1>
-
     <header>
-      <a href="index.html">Início</a>
-      <a href="#1">Como Funciona</a>
-      <a href="#2">Destinos</a>
-      <a href="#faq">FAQ</a>
-      <a href="#beneficios">Benefícios</a>
+      <nav>
+        <a href="index.html">New Airs</a>
+        <a href="#como">Como Funciona</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </header>
 
-    <h2>Viagem pelo Brasil com o Melhor custo benefício</h2>
+    <main class="hero">
+      <video class="bg-video" autoplay muted loop playsinline poster="capa.jpg">
+        <source
+          src="https://videos.pexels.com/video-files/36268137/15380256_3840_2160_30fps.mp4"
+          type="video/mp4"
+        />
+        <source src="video.webm" type="video/webm" />
+      </video>
+
+      <h1 class="titulo1">
+        New Airs
+        <span>Voe além dos limites</span>
+      </h1>
+    </main>
+
+    <h2>Viagem pelo Brasil com o melhor custo-benefício</h2>
 
     <p class="nome">
-      New Airs é um projeto feito por (Matheus, Sergio, Luis e Victor)
-      estudantes do Senac. Esse site tem algumas cidades custo benefício para
-      viajar e descansar um pouco (sair da rotina do dia a dia)
+      New Airs é um projeto feito por Matheus, Sergio, Luis e Victor,
+      estudantes do Senac. Este site reúne cidades com ótimo custo-benefício
+      para você viajar, descansar e sair da rotina do dia a dia.
     </p>
 
-    <section class="primeiro">
+    <section id="como" class="primeiro">
       <p class="lugares">
-        Populares:<button>Fortaleza</button><button>Dourado</button
-        ><button>Baía da Traição</button><button>Maceió</button>
+        Populares:
+        <button>Fortaleza</button>
+        <button>Dourado</button>
+        <button>Baía da Traição</button>
+        <button>Maceió</button>
       </p>
-      <p class="simples">simples e rápido</p>
-      <p id="1" class="como">como New Airs funciona?</p>
+
+      <p class="simples">Simples e rápido</p>
+      <p class="como">Como a New Airs funciona?</p>
       <p class="opções">
-        Em pouco tempo você terá 15 opções de lugares custo benefício para você
-        ir, descançar e se divertir!
+        Em pouco tempo você terá 15 opções de lugares com ótimo
+        custo-benefício para ir, descansar e se divertir!
       </p>
 
-      <p class="passo1">Passo 1 passo 2</p>
+      <p class="passo1">Passo 1, passo 2</p>
       <p class="passo2">
-        Informe o Destino, escolha e reserve. Voe tranquilo digite onde quer ir
-        coloque o local reserve sua viagem receba os detalhes e embarque na sua
-        viagem
+        Informe o destino, escolha e reserve. Voe tranquilo: digite onde quer
+        ir, escolha o local, reserve sua viagem, receba os detalhes e
+        embarque na sua viagem.
       </p>
-      <p id="2" class="explore">Explore o Brasil</p>
-      <p class="destaque">destinos em destaque</p>
-      <div class="cidade">
-        <img
-          src="https://tse1.mm.bing.net/th/id/OIP.jg4Qj6nSifQkYm1K-iijiwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-          alt="Fortaleza"
-        />
-        <span class="categoria">Mais buscados</span>
-        <div>Fortaleza</div>
+    </section>
 
-        <div class="conteudo">
-          <p>A partir de</p>
-          <h3>2.572</h3>
-          <small>por pessoa / ida e volta</small>
-          <button>Ver ofertas</button>
-        </div>
-        </div>
-        
+    <section id="destinos">
+      <p class="explore">Explore o Brasil</p>
+      <p class="destaque">Destinos em destaque</p>
+
+      <div class="cidades">
         <div class="cidade">
-          Baía da traição
+          <span class="categoria">Mais buscados</span>
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.jg4Qj6nSifQkYm1K-iijiwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Praia de Fortaleza"
+          />
+          <h3>Fortaleza</h3>
+          <div class="conteudo">
+            <p>A partir de</p>
+            <h3>R$ 2.572</h3>
+            <small>por pessoa / ida e volta</small>
+            <button>Ver ofertas</button>
+          </div>
+        </div>
+
+        <div class="cidade">
+          <span class="categoria">Custo-benefício</span>
           <img
             src="https://www.bahia.ws/wp-content/uploads/2023/01/Praia-Baia-da-Traicao.jpg"
-            alt="Baía da traição"
+            alt="Praia da Baía da Traição"
           />
-          <p class="preco">A partir de 3071</p>
+          <h3>Baía da Traição</h3>
+          <div class="conteudo">
+            <p>A partir de</p>
+            <h3>R$ 3.071</h3>
+            <small>por pessoa / ida e volta</small>
+            <button>Ver ofertas</button>
+          </div>
         </div>
-        
-       
+
         <div class="cidade">
-          Maceió
+          <span class="categoria">Imperdível</span>
           <img
             src="https://tse4.mm.bing.net/th/id/OIP.uciJMLyKFKCx_ghOVsYtDQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-            alt="Maceió"
+            alt="Praia de Maceió"
           />
-          <p class="preco">A partir de 2.000 a 3.900</p>
+          <h3>Maceió</h3>
+          <div class="conteudo">
+            <p>De</p>
+            <h3>R$ 2.000 a R$ 3.900</h3>
+            <small>por pessoa / ida e volta</small>
+            <button>Ver ofertas</button>
+          </div>
         </div>
       </div>
-    
+    </section>
 
-    <section>
+    <section id="beneficios">
       <h4>Benefícios exclusivos para você</h4>
-      <p class="ideia">Somos um parceiro de viagem ideal para sua viajem.</p>
+      <p class="ideia">Somos um parceiro de viagem ideal para a sua viagem.</p>
 
       <div class="botao">
-        <button>Busca rapida</button> <button>menor preço para você</button>
-        <button>compra segura</button>
+        <button>Busca rápida</button>
+        <button>Menor preço para você</button>
+        <button>Compra segura</button>
       </div>
+
       <div class="card">
         <p class="resposta">O que nossos viajantes falam?</p>
-        Encontrei uma passagem por 2.000. Em varios sites essa mesma passagem é
-        por 4 mil ⭐️⭐️⭐️⭐️⭐️ Luis
         <p>
-          Esse site é muito bom, um dos melhores que ja vi sobre viagem.
-          ⭐️⭐️⭐️⭐️⭐️
+          Encontrei uma passagem por R$ 2.000. Em vários sites essa mesma
+          passagem era por R$ 4.000 ⭐⭐⭐⭐⭐ — Luis
+        </p>
+        <p>
+          Esse site é muito bom, um dos melhores que já vi sobre viagem.
+          ⭐⭐⭐⭐⭐
         </p>
       </div>
     </section>
-    <section>
-      <div class="avaliacao">5K 7,5/10 40k</div>
-      <p class="avaliacao">viajantes Avaliação Economizando</p>
-      <p class="resposta">Dúvidas com as resposta</p>
-      <div class="card1">
-        <p class="cobranca">A new airs cobra alguma taxa de serviço?</p>
-        <p class="card3">
-          Não! A New Airs é 100% gratuita para o usuário. Você busca, compara e
-          encontra as melhores passagens sem pagar nada a mais por isso. Nosso
-          modelo de negócio é baseado em parcerias com companhias aéreas e
-          agências.
-        </p>
-        <p class="preco">Como garantem os menores preços?</p>
 
+    <section id="faq">
+      <div class="avaliacao">5K &middot; 7,5/10 &middot; 40K</div>
+      <p class="avaliacao">Viajantes &middot; Avaliação &middot; Economizando</p>
+      <p class="resposta">Dúvidas e respostas</p>
+
+      <div class="card1">
+        <p class="cobranca">A New Airs cobra alguma taxa de serviço?</p>
+        <p class="card3">
+          Não! A New Airs é 100% gratuita para o usuário. Você busca,
+          compara e encontra as melhores passagens sem pagar nada a mais por
+          isso. Nosso modelo de negócio é baseado em parcerias com
+          companhias aéreas e agências.
+        </p>
+
+        <p class="preco">Como garantem os menores preços?</p>
         <p class="isso">
           Nossa plataforma usa tecnologia de busca em tempo real que varre
           simultaneamente mais de 50 companhias aéreas, agências de viagens
-          online e sites de reserva. Além disso, oferecemos a Garantia de Menor
-          Preço: se você encontrar mais barato em até 24h, reembolsamos a
-          diferença.
+          online e sites de reserva. Além disso, oferecemos a Garantia de
+          Menor Preço: se você encontrar mais barato em até 24h,
+          reembolsamos a diferença.
         </p>
       </div>
     </section>
+
     <footer>
       <p class="final">
-        instagram <i class="fa-brands fa-instagram"></i> @New-Airs-oficial
+        Instagram <i class="fa-brands fa-instagram"></i> @new-airs-oficial
       </p>
-      <p class="final">G-mail @Viagens New airs</p>
-      <h5 class="avaliar">avaliar:</h5>
+      <p class="final">Gmail: viagens@newairs.com</p>
+
+      <h5 class="avaliar">Avaliar:</h5>
       <div class="estrelas">
         <span class="estrela1">★</span>
         <span class="estrela2">★</span>
@@ -137,7 +183,31 @@
         <span class="estrela4">★</span>
         <span class="estrela5">★</span>
       </div>
-      <button>enviar</button>
+      <button>Enviar</button>
     </footer>
+
+    <!-- ==========================================================
+         MODAL DE BUSCA (estrutura para o JS.js controlar)
+    ========================================================== -->
+    <div id="janelaBusca" hidden>
+      <div class="fundo-modal">
+        <div class="modal">
+          <button class="fechar-modal" aria-label="Fechar busca">×</button>
+          <h2>Buscar passagem</h2>
+
+          <label for="origem">Origem</label>
+          <input type="text" id="origem" placeholder="De onde você vai sair?" />
+
+          <label for="destino">Destino</label>
+          <input type="text" id="destino" placeholder="Para onde você quer ir?" />
+
+          <button id="realizarBusca">Buscar</button>
+
+          <div id="resultadoBusca"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mensagem-site"></div>
   </body>
 </html>
